@@ -6,7 +6,7 @@ ask your TA about where to get the software and how to install it.  We have also
 provided some scripts to help automate the setup and end processes that you will
 need each lab.
 
-## Start of Each Lab
+### Start of Each Lab
 1. connect.py
   1. Automatically opens up a channel to connect to all the switches and
        routers of your pod.
@@ -30,7 +30,7 @@ need each lab.
        have enabled all the devices.  Meaning, you have typed in `en<CR>`.
        Otherwise, ask your TA for help.
 
-## Ending Lab
+### Ending Lab
 1. saveall.py
   1. Automatically saves your configurations for each device as text files to
        specified folder.
