@@ -33,9 +33,9 @@ subnetting.
 - **interface**
 - **sub-interface**
 - **hostname**: name of switch or router
-    >```en```
-     ```conf t```
-     ```hostname``` 'name'
+    >en
+     conf t
+     hostname 'name'
 
 - **subnet**
 - **vlan**
