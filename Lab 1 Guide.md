@@ -28,10 +28,40 @@ subnetting.
 
 ### Important Terminology
 
+- **switch**
+- **router**
+- **interface**
+- **sub-interface**
+- **hostname**: name of switch or router
+    >```en
+     conf t
+     hostname``` 'name'
+
+- **subnet**
+- **vlan**
+- **trunking**
+- **gateway**
+
 ### Completion Requirements
 Make sure each host is able to ping itself, its gateway, and the other host.
 
 ### Host Configurations
+As we do not have any actual PCs to configure, we must use routers to act as
+hosts.  One router will represent a host on the vlan 5 network, while the other
+will represent a host on the vlan 6 network.  Because the routers will be used
+as hosts, they will need to be changed from a layer 3 device to a layer 2
+device.  Do so on each router by the following:
+    >no ip routing
+
+Before setting up the ip addresses, make sure to configure the hostname for the
+host of vlan 5 and vlan 6.
+
+Next we need to setup a default gateway which will allow the host to leave its
+local network or subnet.  For instance to setup the default gateway for vlan 5,
+use the following command:
+    >ip default gateway 192.168.5.1
+
+Setup the vlan 6 host accordingly.
 
 ### Switch Configurations
 
